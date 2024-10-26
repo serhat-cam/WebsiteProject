@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WORK</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+
+    </head>
+
+    <body>
+        <a href="index.html" class="blacc">BLACC INK</a>
+        <header class="site-header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li>
+                        <a href="discover.html">DISCOVER*</a>
+                        <ul class="submenu"> <!-- Submenu for Discover -->
+                            <li><a href="booking.html">BOOKING</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <main class="works-page">
+        <h1>Works</h1>
+        <p class="small-text3">To request an appointment, submit the <a href="booking.html">Booking Form here.</a></p>
+    </main>   
+        <section class="image-layout">
+            <figure class="large-image">
+                <img src="img/snake.png" alt="Large Image">
+            </figure>
+            <figure class="small-image top-left">
+                <img src="img/baby.png" alt="Small Image 1">
+            </figure>
+            <figure class="small-image top-middle">
+                <img src="img/woman.png" alt="Small Image 2">
+            </figure>
+            <figure class="small-image top-right">
+                <img src="img/smile.png" alt="Small Image 3">
+            </figure>
+            <figure class="small-image bottom-left">
+                <img src="img/eye1.png" alt="Small Image 4">
+            </figure>
+            <figure class="small-image bottom-middle">
+                <img src="img/flower.png" alt="Small Image 5">
+            </figure>
+            <figure class="small-image bottom-right">
+                <img src="img/mouth.png" alt="Small Image 6">
+            </figure>
+            <figure class="large-image bottom-large">
+                <img src="img/bug.png" alt="Large Image Bottom">
+            </figure>
+            <figure class="small-image middle-left">
+                <img src="img/bird.png" alt="Small Image 7">
+            </figure>
+            <figure class="small-image bottom-right-alt">
+                <img src="img/eye2.png" alt="Small Image 8">
+            </figure>
+        </section>
+
+        
+        
+        
+
+
+
+    </body>
+<footer class="site-footer">
+    <nav class="footer-nav"> 
+        <ul>
+            <li><a href="https://www.youtube.com">YOUTUBE</a></li>
+            <li><a href="https://www.x.com">TWITTER</a></li>
+            <li><a href="https://instagram.com">INSTAGRAM</a></li>
+            <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2024 Serhat Cam</p>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+.works-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings on About Page */
+.works-page h1{
+    color: #000000;
+    letter-spacing: 5px;
+    font-variation-settings: 'wght' 600;
+    margin-left: -300px;
+    margin-top: 0;
+    font-size: 38px;
+    margin-top: 50px;
+}
+
+.small-text3 {
+    color: #575757;
+    letter-spacing: 3px;
+    font-variation-settings: 'wght' 200;
+    margin-left: -300px;
+    font-size: 14px;
+}
+
+.small-text3 {
+    margin-top: -5px;
+}
+
+.small-text3 a {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    font-variation-settings: 'wght' 450;
+}
+
+.small-text3 a:hover {
+    text-decoration: underline;
+    
+}
+
+.thin_line, .about-page h2, .small-text-1 {
+    position: relative;
+    top: -400px;
+}
+
+.small-text-1 {
+    margin-top: -5px;
+}
+
+.image-layout {
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 300px;
+    top: 20px;
+    margin-bottom: 120%;
+}
+
+.large-image img {
+    width: 547px;
+    height: 650px;
+    position: absolute;
+    left: 278px;
+    top: 0;
+}
+
+.small-image img {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+}
+
+.top-left img {
+    left: 0;
+    top: 0;
+}
+
+.top-middle img {
+    left: 0;
+    top: 279px;
+}
+
+.top-right img {
+    left: 0;
+    top: 1395px;
+}
+
+.bottom-left img {
+    left: 0;
+    top: 837px;
+}
+
+.bottom-middle img {
+    left: 279px;
+    top: 1395px;
+}
+
+.middle-left img {
+    left: 0;
+    top: 558px;
+}
+
+.bottom-large img {
+    width: 547px;
+    height: 728px;
+    left: 278px;
+    top: 658px;
+}
+
+.bottom-right img {
+    left: 0px;
+    top: 1116px;
+}
+
+.bottom-right-alt img {
+    left: 558px;
+    top: 1395px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <meta name="Serhat Cam" content="Artist-Page">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body class="faq">
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+            </ul>
+            <ul>
+                <li class="text-logo"><a href="index.html">BLACC INK</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
+                <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+                <li class="hideOnMobile">
+                    <a href="discover.html">DISCOVER*</a>
+                    <ul class="submenu">
+                        <li><a href="booking.html">BOOKING</a></li>
+                    </ul>
+                </li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="undefined">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+
+    <main class="faq-page">
+        <h1>FAQ</h1>
+
+        <section class="faq-item">
+            <h2 class="faq-question">HOW TO BOOK A SESSION?</h2>
+            <p class="faq-answer">If you're interested in booking a session please fill the Online Booking Form. To secure your appointment, a nonrefundable deposit will be required later on.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">WHERE IS THE ARTIST LOCATED?</h2>
+            <p class="faq-answer">Serhat primarily works from his studio at Kunstenaarsgracht 47 in Amsterdam. However, he frequently travels worldwide as a guest artist, collaborating with studios in various locations.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">HOW MUCH DOES A TATTOO COST?</h2>
+            <p class="faq-answer">The cost of a tattoo varies depending on size, design complexity, and placement. For an accurate quote, it's best to fill out the Online Booking Form.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">HOW LONG IS THE WAIT LIST?</h2>
+            <p class="faq-answer">The waiting list depends on Serhat's availability and demand, particularly when he’s traveling for guest spots. Booking in advance is highly recommended.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">HOW SHOULD I PREPARE FOR MY SESSION?</h2>
+            <p class="faq-answer">To prepare for your session, avoid drinking alcohol on the day of your appointment as it can thin your blood. If possible, shave the area to be tattooed beforehand, ensuring the skin is clean and smooth.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">CAN I BRING A FRIEND TO MY APPOINTMENT?</h2>
+            <p class="faq-answer">Unfortunately, you cannot bring a friend to your tattoo session. To maintain a clean and safe environment in the studio, we limit the number of people present during the appointment.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">CAN I CHANGE MY APPOINTMENT DATE?</h2>
+            <p class="faq-answer">Yes, you can change your appointment date. However, please note that due to high demand, you may have to wait longer for your new appointment.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">WHAT IF I DON’T SHOW UP?</h2>
+            <p class="faq-answer">If you're more than 30 minutes late, it will be considered a no-show, and your $150 deposit will not be refunded.</p>
+        </section>
+    </main>
+
+    <section class="cookies">
+        <p>We use cookies to improve your experience. By using our site, you agree to our <a href="#">Privacy Policy</a>.</p>
+        <button onclick="closeCookies()">Accept</button>
+    </section>
+
+    <script>
+        function closeCookies() {
+            document.querySelector('.cookies').style.display = 'none';
+        }
+    </script>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://www.youtube.com">YOUTUBE</a></li>
+                <li><a href="https://www.x.com">TWITTER</a></li>
+                <li><a href="https://instagram.com">INSTAGRAM</a></li>
+                <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Serhat Cam</p>
+    </footer>
+</body>
+</html>

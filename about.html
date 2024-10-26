@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <meta name="Serhat Cam" content="Artist-Page">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+            </ul>
+            <ul>
+                <li class="text-logo"><a href="index.html">BLACC INK</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
+                <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+                <li class="hideOnMobile">
+                    <a href="discover.html">DISCOVER*</a>
+                    <ul class="submenu">
+                        <li><a href="booking.html">BOOKING</a></li>
+                    </ul>
+                </li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="undefined">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+
+    <main class="about-page">
+        <h1>ABOUT ARTIST</h1>
+        <p class="small-text">To request an appointment, submit the <a href="booking.html">Booking Form here.</a></p>
+
+        <section class="bio-container">
+            <img src="img/my-pic.JPEG" alt="myPic" title="This is my picture." class="me">
+            <p class="bio">Serhat Cam is a talented tattoo artist known for his unique black and white style. Specializing in abstract designs, he skillfully blends realistic images with elements that reflect his artistic vision. With a passion for creating one-of-a-kind pieces, Serhat continually explores new concepts and techniques to enhance his craft.</p>
+            <p class="bio">Based in Amsterdam, he frequently participates in tattoo conventions and guest spots, sharing his expertise and creativity with clients around the world.</p>
+            <p class="bio">To book an appointment, please fill out the <a href="booking.html" class="booking-link">Online Booking Form</a>. For any other inquiries, feel free to reach via email.</p>
+        </section>
+
+        <h2>Tours</h2>
+        <p class="small-text-1">All appointments in Amsterdam are held at the artist’s studio, which is the default location.</p>
+
+        <h3>2024</h3>
+        <h4 class="Europe">Europe</h4>
+        <h5 class="months">OCTOBER</h5>
+        <section class="tour-section">
+            <p>• 23-25th Vienna - Alpine Ink</p>
+        </section>
+
+        <h5 class="months">NOVEMBER</h5>
+        <section class="tour-section">
+            <p>• 5th Paris - La Ligne</p>
+            <p>• 12th Brussels - Ink Society</p>
+        </section>
+
+        <h4 class="World">World</h4>
+        <h5 class="months">DECEMBER</h5>
+        <section class="tour-section">
+            <p>• 8-13th Tokyo - Koi</p>
+            <p>• 16-20th Yokohama - Shogunn</p>
+            <p>• 24-25th Bangkok - ThaInk</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://www.youtube.com">YOUTUBE</a></li>
+                <li><a href="https://www.x.com">TWITTER</a></li>
+                <li><a href="https://instagram.com">INSTAGRAM</a></li>
+                <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Serhat Cam</p>
+    </footer>
+
+    <section class="cookies">
+        <p>We use cookies to improve your experience. By using this site, you agree to our <a href="#">Privacy Policy</a>.</p>
+        <button onclick="closeCookies()">Accept</button>
+    </section>
+
+    <script>
+        function closeCookies() {
+            document.querySelector('.cookies').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

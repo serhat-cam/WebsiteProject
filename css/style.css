@@ -1,0 +1,943 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Inter', sans-serif; /* Using the imported font */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    min-height: 100vh;
+}
+
+
+/* Background Video Styles */
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.under-logo {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 13px;
+    position: absolute;
+    top: 540px;
+    left: 185px;
+    mix-blend-mode: exclusion;
+}
+
+/* Logo Styles */
+.logo {
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    width: 280px;
+    mix-blend-mode: exclusion;
+}
+
+.main-content p { 
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+
+    z-index: 2;
+    
+}
+
+.main-content a {
+    color: rgb(131, 131, 131);
+    mix-blend-mode: exclusion;
+    font-size: 17px;
+    opacity: 80%;
+    text-decoration: none;
+    background-color: white;
+
+    border-radius: 3px;
+    
+}
+
+.main-content p:hover {
+    text-decoration: underline;
+    color: white
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Use full width on mobile */
+    }
+}
+
+/*---------------------ABOUT PAGE STARTS HERE---------------------*/
+
+
+
+.about-page {
+    max-width: 1200px; /* Limits the form width */
+    padding: 120px;    /* Adds padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Aligns text and elements to the left */
+    position: relative; /* Keep it relative for better control */
+    left: 0; /* Align the form to the left of the page */
+    
+    
+}
+
+.about-page h1 {
+    font-size: 32px; /* Larger font for title */
+    font-weight: 700; /* Bold */
+    margin-bottom: 10px; /* Space between heading and subheading */
+    
+}
+
+.about-page .small-text {
+    font-size: 14px;
+    margin-bottom: 20px; /* Space below subheading */
+    color: #666; /* Light gray color */
+    margin-left: 0;
+    text-align: left;
+}
+
+
+.about-page h2 {
+    font-size: 38px;
+    margin-top: 480px;
+}
+
+.about-page h3 {
+    font-size: 35px;
+    margin-top: -350px;
+}
+
+.about-page h4 {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.about-page h5 {
+    font-size: 17px;
+    font-variation-settings: 'wght' 750;
+    letter-spacing: 1.3px;
+}
+
+/* Tours Section */
+.tour-section {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+
+.tour-section p {
+    margin: 20px 0; /* Adds space between paragraphs */
+    text-align: left; /* Aligns text to the left */
+    color: #000; /* Text color */
+    font-size: 18px; /* Font size for readability */
+    letter-spacing: 2px;
+    line-height: 1.6; /* Improves readability with better line spacing */
+    font-variation-settings: 'wght' 350;
+}
+
+
+
+
+/* Aligning small-text and small-text-1 to match h1 and h2 */
+.small-text, .small-text-1 {
+    color: #575757;
+    letter-spacing: 3px;
+    font-variation-settings: 'wght' 200;
+    margin-left: 50px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.small-text {
+    margin-top: -5px;
+}
+
+.small-text a {
+    color: #000000;
+    font-variation-settings: 'wght' 450;
+    text-decoration: none;
+}
+
+.small-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+.small-text-1 {
+    margin-top: -5px;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: flex-end; /* Center-aligns children */
+    margin-top: 20px; /* Space above the bio section */
+}
+
+/* Bio and Image on About Page */
+.me {
+    width: 750px;
+    max-width: 100%;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    
+}
+
+.bio {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    letter-spacing: 1.1px;
+    font-variation-settings: 'wght' 450; 
+    text-align: center;
+    text-indent: 10px;
+}
+
+.email {
+    color: gray;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    margin-left: 430px;
+    margin-top: 0px;
+    position: relative;
+    top: -420px;
+}
+
+.thin_line {
+    width: 100%;
+    height: 1px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.booking-link {
+    color: black;
+    font-variation-settings: 'wght' 800;
+    text-decoration: none;
+}
+
+.booking-link:hover, .booking-link:focus, .booking-link:active {
+    text-decoration: underline;
+}
+
+.booking-link:active {
+    color: rgb(111, 111, 111);
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 20px; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Use full width on mobile */
+    }
+}
+
+
+
+/*---------------------WORKS PAGE STARTS HERE---------------------*/
+
+
+.works-page {
+    max-width: 1200px; /* Limits the form width */
+    padding: 120px;    /* Adds padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Aligns text and elements to the left */
+    position: relative; /* Keep it relative for better control */
+    left: 0; /* Align the form to the left of the page */
+    
+}
+
+.works-page h1 {
+    font-size: 32px; /* Larger font for title */
+    margin-bottom: 10px; /* Space between heading and subheading */
+    
+}
+
+.small-text3 {
+    font-size: 14px;
+    margin-bottom: 20px; /* Space below subheading */
+    color: #666; /* Light gray color */
+    margin-left: 0;
+    letter-spacing: 3px;
+    font-variation-settings: 'wght' 200;
+}
+
+.small-text3 {
+    margin-top: -5px;
+}
+
+.small-text3 a {
+    color: #000000;
+    text-decoration: none;
+    font-variation-settings: 'wght' 400;
+}
+
+.small-text3 a:hover {
+    text-decoration: underline;
+    
+}
+
+.thin_line, .about-page h2, .small-text-1 {
+    position: relative;
+    top: -400px;
+}
+
+.small-text-1 {
+    margin-top: -5px;
+}
+
+.image-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Reduced space between images */
+    padding: 10px; /* Reduced padding around the layout */
+}
+
+.image-layout figure {
+    margin: 0; /* Reset default margin */
+    padding: 0;
+    text-align: center; /* Center the captions */
+}
+
+.image-layout img {
+    width: 40%; /* Smaller images, 80% of their container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 5px; /* Optional: Rounded corners, smaller radius */
+}
+
+.image-layout figcaption {
+    margin-top: 5px; /* Smaller space above the caption */
+    font-size: 12px; /* Smaller caption text */
+    color: #666;
+}
+
+/* Responsive: On smaller screens, make it 1 column */
+@media (max-width: 768px) {
+    .image-layout {
+        grid-template-columns: 1fr; /* Switch to 1 column */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------FAQ PAGE STARTS HERE---------------------*/
+.faq {
+    background-color: #ffffff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.faq-page {
+    max-width: 1200px; /* Limits the form width */
+    padding: 120px;    /* Adds padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Aligns text and elements to the left */
+    position: relative; /* Keep it relative for better control */
+    left: 0; /* Align the form to the left of the page */
+    
+}
+
+.faq-page h1 {
+    font-size: 32px; /* Larger font for title */
+    font-weight: 700; /* Bold */
+    margin-bottom: 10px; /* Space between heading and subheading */
+    color: rgb(0, 0, 0);
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 20px; /* Space between FAQ items */
+}
+
+/* FAQ Question Styles */
+.faq-question {
+    background-color: #ffffff; /* White background only for the question */
+    opacity: 60%;
+    color: #000000; /* Black text for the question */
+    padding: 10px 20px; /* Add padding around the question */
+    display: inline-block; /* Ensures the background only wraps around the text */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #333333;
+    margin: 0;
+    font-variation-settings: 'wght' 700;
+}
+
+/* FAQ Answer Styles */
+.faq-answer {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 2;
+    color: #929292;
+    letter-spacing: 1.5px;
+}
+
+.small-text4 {
+    color: #575757;
+    letter-spacing: 3px;
+    font-variation-settings: 'wght' 200;
+    margin-left: -300px;
+    font-size: 14px;
+}
+
+.small-text4 {
+    margin-top: -5px;
+}
+
+.small-text4 a {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.small-text4 a:hover {
+    text-decoration: underline;
+}
+
+.faq-item {
+    margin-bottom: 20px; /* Space between FAQ items */
+    
+}
+
+/* FAQ Question Styles */
+.faq-question {
+    background-color: #000000; /* White background only for the question */
+    opacity: 100%;
+    color: #ffffff; /* Black text for the question */
+    padding: 10px 20px; /* Add padding around the question */
+    display: inline-block; /* Ensures the background only wraps around the text */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    font-variation-settings: 'wght' 700;
+}
+
+/* FAQ Answer Styles */
+.faq-answer {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 2;
+    color: #282828;
+    letter-spacing: 1.5px;
+}
+
+/* Links within FAQ */
+.faq-answer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .faq-page {
+        padding: 20px; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Use full width on mobile */
+    }
+}
+
+
+/*---------------------BOOKING PAGE STARTS HERE---------------------*/
+
+/* General form styling */
+.booking-form {
+    max-width: 1200px; /* Limits the form width */
+    padding: 120px;    /* Adds padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Aligns text and elements to the left */
+    position: relative; /* Keep it relative for better control */
+    left: 0; /* Align the form to the left of the page */
+}
+
+.booking-form h1 {
+    font-size: 32px; /* Larger font for title */
+    font-weight: 700; /* Bold */
+    margin-bottom: 10px; /* Space between heading and subheading */
+    
+}
+
+.booking-form .small-text {
+    font-size: 14px;
+    margin-bottom: 20px; /* Space below subheading */
+    color: #666; /* Light gray color */
+    margin-left: 0;
+    text-align: left;
+}
+
+/* Input field styling */
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="submit"] {
+    width: 100%; /* Full-width input fields */
+    padding: 12px 20px; /* Adds padding inside the input */
+    margin: 8px 0; /* Space between input fields */
+    border: 1px solid #252525; /* Dark border */
+    border-radius: 2px; /* Rounded input fields */
+    box-sizing: border-box; /* Ensures consistent width calculation */
+    font-size: 16px; /* Readable text size */
+    font-family: 'Inter', sans-serif; /* Consistent font */
+    letter-spacing: 1.5px;
+}
+
+/* Styling for radio buttons, checkboxes, and their labels */
+.booking-form input[type="radio"],
+.booking-form input[type="checkbox"] {
+    margin-right: 8px; /* Space between radio/checkbox and label */
+    cursor: pointer; /* Pointer on hover */
+    
+}
+
+/* Style the radio buttons */
+.booking-form input[type="radio"]:checked {
+    accent-color: #000; /* Change color of the selected radio button */
+}
+
+/* Style the checkboxes */
+.booking-form input[type="checkbox"]:checked {
+    accent-color: #000; /* Change color of the checked checkbox */
+}
+
+/* Label styling */
+.booking-form label {
+    font-size: 17px; /* Make labels readable */
+    margin-bottom: 10px; /* Space between label and input */
+    display: block; /* Stack labels on top of input */
+    text-align: left; /* Aligns label text to the left */
+    font-variation-settings: 'wght' 600; /* Font weight */
+    letter-spacing: 2.2px; /* Spacing between letters */
+}
+
+/* Checkbox section styling */
+.booking-form .checkbox-text {
+    margin-top: 20px; /* Adds space above checkboxes */
+    font-weight: 600; /* Makes label bold */
+    text-align: left; /* Aligns the checkbox section to the left */
+}
+
+/* Submit button styling */
+.booking-form input[type="submit"] {
+    background-color: #000; /* Black button */
+    color: white; /* White text */
+    font-weight: 700; /* Bold text */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #444; /* Darken on hover */
+    font-variation-settings: 'wght' 900;
+}
+
+.info-text {
+    font-variation-settings: 'wght' 500;
+    
+}
+
+.maps-photo {
+    height: auto;
+    width: 100%; /* Make the image responsive */
+    max-width: 1000px; /* Ensure the image doesn't exceed 1000px */
+    display: block;
+}
+
+.maps {
+    text-align: left; /* Centers the image inside the figure */
+    margin-top: 20px; /* Adds space between the submit button and the image */
+}
+
+.address{
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #282828ab;
+    font-variation-settings: 'wght' 700;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* Responsive design: Make the form full width on smaller screens */
+@media (max-width: 768px) {
+    .booking-form {
+        padding: 10px; /* Reduce padding on small screens */
+        margin-left: 10px; /* Ensure a margin is kept on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .works-page {
+        padding: 10px; /* Reduce padding on small screens */
+        margin-left: 10px; /* Ensure a margin is kept on small screens */
+    }
+}
+
+
+
+.info-text {
+    max-width: 500px;
+}
+                                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------DISCOVER PAGE STARTS HERE---------------------*/
+
+/* Footer Styles */
+.site-footer {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    text-align: center; /* Ensures text is centered within flex items */
+    padding: 10px 0;
+    background-color: #0000001b;
+    margin-top: auto; /* Pushes footer to the bottom if content is short */
+    letter-spacing: 3px;
+    opacity: 100%;
+    width: 100%; /* Full width for footer */
+    flex-direction: column; /* Stack items vertically */
+    font-size: 14px;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Centers the footer navigation list */
+    text-align: center;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav ul li {
+    display: inline-block; /* Inline-block for proper spacing and centering */
+}
+
+.footer-nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.small-text, .small-text-1 {
+    color: #000000;
+    letter-spacing: 3px;
+    font-variation-settings: 'wght' 200;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px auto; /* Centers the small text */
+}
+
+.small-text a {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.small-text a:hover {
+    text-decoration: underline;
+}
+
+.thin_line, .about-page h2, .small-text-1 {
+    position: relative;
+    top: -400px;
+}
+
+.small-text-1 {
+    text-align: left;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 5px 0; /* Reduce padding */
+        font-size: 17px; /* Decrease font size */
+        align-items: flex-start;
+        text-align: left;
+        font-variation-settings: 'wght' 400;
+        color: #000;
+        
+    }
+
+    .footer-nav ul {
+        flex-direction: column; /* Stack items vertically */
+        gap: 5px; /* Smaller gap between items */
+        font-variation-settings: 'wght' 400;
+        align-items: flex-start;
+        text-align: left;
+        color: #000;
+    }
+
+    .small-text, .small-text-1 {
+        font-size: 12px; /* Smaller font size */
+        letter-spacing: 1px; /* Reduce letter-spacing */
+        margin: 2px auto;
+        
+    }
+}
+
+
+
+.index-nav a{
+    color: #ffffff;
+}
+
+nav {
+        z-index: 1;
+        position: relative;
+        
+
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-logo{
+    font-size: 23px;
+    font-weight: 200;
+    letter-spacing: 8.88px;
+    font-variation-settings: 'wght' 420;
+    }
+
+nav li{
+    height: 50px;
+    
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    letter-spacing: 5px;
+    
+}
+
+
+nav a:hover{
+    color: gray;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.hideOnMobile {
+    font-variation-settings: 'wght' 500;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar li{
+    width: 100%;
+    
+}
+
+.sidebar a{
+    width: 100%;
+    font-variation-settings: 'wght' 600;
+    letter-spacing: 5px;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+
+nav li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    padding: 8px 0;
+    top: 100%; /* Position below Discover */
+    left: 1240px;
+    align-items: flex-start;
+}
+
+.submenu li {
+    padding: 8px 16px;
+}
+
+.submenu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    color: gray;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.522);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 9999; /* Keeps it above all other elements */
+}
+
+.cookies p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cookies button {
+    margin-left: 15px;
+    padding: 8px 22px;
+    background-color: #1676e3;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

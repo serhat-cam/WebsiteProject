@@ -1,0 +1,5 @@
+At first I've created separate css files for every  page. But you said we can create only one, so I had to start all over again in a new html. This html was not connected to my GITHUB, if you don't see much things on GITHUB that's why. I'm able to explain everything I did so I don't think there'll be a problem, created myself. 
+
+Note= Asked a friend from B class and their teacher (Dan) told them that they can use multiple css files. 
+
+Date written = 27/10/2024

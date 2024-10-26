@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING</title>
+    <meta name="Serhat Cam" content="Artist-Page">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+</head>
+
+<body>
+   
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="booking.html">BOOKING</a></li>  
+            </ul>
+            <ul>
+                <li class="text-logo"><a href="index.html">BLACC INK</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
+                <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+                <li class="hideOnMobile">
+                    <a href="discover.html">DISCOVER*</a>
+                    <ul class="submenu">
+                        <li><a href="booking.html">BOOKING</a></li>
+                    </ul>
+                </li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';   
+            }
+                
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }    
+        </script>
+    </header>
+
+    <!-- Main Content Section for the Booking Form -->
+    <main class="booking-form">
+        <h1 class="BOOKING-FORM">BOOKING FORM</h1>
+        <p class="small-text">This form helps the tattoo artist understand you and speed up the process.</p>
+
+        <form action="/submit" method="post">
+            <label for="name">Your Name*</label>
+            <input type="text" name="name" id="name" placeholder="Example: James Brown" required>
+            
+            <label for="email">Email Address*</label>
+            <input type="email" name="email" id="email" placeholder="Example: JamesBrown@gmail.com" required>
+            
+            <label for="pnumber">Phone Number*</label>
+            <input type="text" name="pnumber" id="pnumber" placeholder="Example: +31687xxxxx0" required>
+            
+            <p>Are you at least 18 years old?*</p>
+            <label>
+                <input type="radio" name="age" value="Yes" required> Yes
+            </label>
+            <label>
+                <input type="radio" name="age" value="No" required> No
+            </label>
+
+            <p>Preference</p>
+            <label>
+                <input type="radio" name="gender" value="Mr." required> Mr.
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Mrs." required> Mrs.
+            </label>
+            
+            <p>Have you been tattooed by me before?*</p>
+            <label>
+                <input type="radio" name="tattooed_before" value="Yes" required> Yes
+            </label>
+            <label>
+                <input type="radio" name="tattooed_before" value="No" required> No
+            </label>
+
+            <p class="checkbox-text">Preferred Days*</p>
+            <label><input type="checkbox" name="day" value="monday"> Monday</label><br>
+            <label><input type="checkbox" name="day" value="tuesday"> Tuesday</label><br>
+            <label><input type="checkbox" name="day" value="wednesday"> Wednesday</label><br>
+            <label><input type="checkbox" name="day" value="thursday"> Thursday</label><br>
+            <label><input type="checkbox" name="day" value="friday"> Friday</label><br>
+            <label><input type="checkbox" name="day" value="saturday"> Saturday</label><br>
+            <label><input type="checkbox" name="day" value="sunday"> Sunday</label><br>
+
+            <p>Tattoo Type*</p>
+            <label>
+                <input type="radio" name="tattoo_type" value="New" required> New
+            </label>
+            <label>
+                <input type="radio" name="tattoo_type" value="Touch Up" required> Touch Up
+            </label>
+            <label>
+                <input type="radio" name="tattoo_type" value="Cover Up" required> Cover Up
+            </label>
+
+            <label for="placement">Placement*</label>
+            <input type="text" name="placement" id="placement" placeholder="Example: Right Upper Leg, On Left Hand..." required>
+
+            <label for="size">Size*</label>
+            <input type="text" name="size" id="size" placeholder="Example: 5x6 cm" required>
+                  
+            <input type="submit" value="SUBMIT">
+        </form>
+
+        <em class="info-text">Note: Due to the artist’s unique style and creative approach, not all requests may be accepted. If you do not receive a reply, it simply means the design might not be the best fit for the artist’s expertise. We appreciate your understanding and thank you for considering us for your tattoo.</em>
+
+        <figure class="maps">
+            <img class="maps-photo" src="img/maps-photo.png" alt="maps-photo">
+        </figure> 
+        <p class="address">Kunstenaarsgracht 47</p>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <nav class="footer-nav"> 
+            <ul>
+                <li><a href="https://www.youtube.com">YOUTUBE</a></li>
+                <li><a href="https://www.x.com">TWITTER</a></li>
+                <li><a href="https://instagram.com">INSTAGRAM</a></li>
+                <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Serhat Cam</p>
+    </footer>
+
+    <section class="cookies">
+        <p>We use cookies to improve your experience. By using this site, you agree to our <a href="#">Privacy Policy</a>.</p>
+        <button onclick="closeCookies()">Accept</button>
+    </section>
+
+    <script>
+        function closeCookies() {
+            document.querySelector('.cookies').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

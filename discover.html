@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCOVER</title>
+    <meta name="Serhat Cam" content="Artist-Page">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+            </ul>
+            <ul>
+                <li class="text-logo"><a href="index.html">BLACC INK</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
+                <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+                <li class="hideOnMobile">
+                    <a href="discover.html">DISCOVER*</a>
+                    <ul class="submenu">
+                        <li><a href="booking.html">BOOKING</a></li>
+                    </ul>
+                </li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="undefined">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+
+    <main>
+        <h1>Wanna Feel Like A Pro?</h1>
+        <h2>Check Our New Collection</h2>
+        <p class="warning">Only available in our shop in Amsterdam.</p>
+
+        <img src="img/machine_tiger.PNG" class="machine" alt="Machine Tiger">
+        <img src="img/machine_normal.PNG" class="machine" alt="Machine Normal">
+        <img src="img/machine_splash.PNG" class="machine" alt="Machine Paint">
+        <img src="img/mahcine_gold.PNG" class="machine" alt="Machine Gold">
+        <img src="img/mahcine_ocean.PNG" class="machine" alt="Machine Ocean">
+        <img src="img/machine_flowers.PNG" class="machine" alt="Machine Flowers">
+        <img src="img/machine_amsterdam.PNG" class="machine" alt="Machine Amsterdam">
+        <img src="img/machine_blood.PNG" class="machine" alt="Machine Blood">
+        <img src="img/machine_fire.PNG" class="machine" alt="Machine Fire">
+
+        <section class="workshop">
+            <h1 class="workshop-title">Join Our Tattoo Workshop!</h1>
+            <p class="short">Are you interested in learning the art of tattooing? Join our hands-on workshop where you'll get to:</p>
+            <ul>
+                <!-- Workshop details can be added here -->
+            </ul>
+            <p>Date: 09-01-2025</p>
+            <p>Location: Our studio in Amsterdam</p>
+            <p>Sign up today and take your first step towards becoming a tattoo artist!**</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://www.youtube.com">YOUTUBE</a></li>
+                <li><a href="https://www.x.com">TWITTER</a></li>
+                <li><a href="https://instagram.com">INSTAGRAM</a></li>
+                <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Serhat Cam</p>
+    </footer>
+
+    <section class="cookies">
+        <p>We use cookies to improve your experience. By using this site, you agree to our <a href="#">Privacy Policy</a>.</p>
+        <button onclick="closeCookies()">Accept</button>
+    </section>
+
+    <script>
+        function closeCookies() {
+            document.querySelector('.cookies').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
