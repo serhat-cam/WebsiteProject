@@ -429,7 +429,10 @@ html, body {
 
 
 @media (max-width: 768px){
-    .image-layout
+    .image-layout{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .img-baby, .img-bird, .img-flower, .img-eye1, .img-eye2, .img-mouth, .img-woman, .img-smile {
         transform: scale(0.15);
@@ -793,56 +796,262 @@ html, body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------DISCOVER PAGE STARTS HERE---------------------*/
 
-/* Footer Styles */
-.site-footer {
-    color: rgb(0, 0, 0);
+.discover-body{
+    background-color: #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(40px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+main {
+    flex: 1;
+    text-align: center; /* Center text in main */
+}
+
+.discover-page h1, .discover-page h2 {
+    animation: fadeIn 3.0s ease-out forwards; /* Apply the animation */
+    opacity: 0; /* Start hidden */
+}
+
+.discover-page h1 {
+    font-size: 46px; /* Adjust this for width */
+    color: #bdbdbd;
+    animation-delay: 0.3s; /* Optional delay before the animation starts */
+    letter-spacing: 6px;
+}
+
+.discover-page h2 {
+    font-size: 46px; /* Adjust this for width */
+    color: #3b3a3a;
+    animation-delay: 1.5s; /* Optional delay before the animation starts */
+    letter-spacing: 7px;
+}
+
+.warning {
+    font-family: 'Inter', sans-serif;
+    color: #434343;
+    animation: fadeIn 3.0s ease-out forwards;
+    animation-delay: 1.8s; /* Optional delay before the animation starts */
+    opacity: 0; /* Start hidden */
+    font-variation-settings: 'wght' 500;
+    letter-spacing: 4px;
+}
+
+.main-images {
+    display: flex; /* Use flexbox to align images side by side */
+    justify-content: center; /* Center images horizontally */
+    gap: 10px; /* Optional: Add space between images */
+    margin: 20px 0; /* Optional: Add margin to separate from other content */
+}
+
+.machine {
+    max-width: 25%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add margin between images */
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 3.0s ease-out forwards; /* Apply the animation */
+    animation-delay: 2.3s; /* Optional delay before the animation starts */
+}
+
+/* Workshop Section Styles */
+.workshop {
+    text-align: center; /* Center text in the workshop section */
+    margin: 20px 0; /* Optional: Add margin to separate from other content */
+}
+
+.workshop p {
+    color: rgb(222, 222, 222);
+}
+
+.workshop-title {
+    font-size: 32px; /* Adjust title font size */
+    color: #bdbdbd; /* Title color */
+}
+
+.short {
+    font-size: 18px; /* Adjust font size */
+    color: #c9c9c9; /* Text color */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-images {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .machine {
+        max-width: 100%; /* Full width for images */
+    }
+
+    .discover-page h1, .discover-page h2, .warning {
+        font-size: 24px; /* Adjust font size for small screens */
+    }
+}
+
+
+
+
+
+.discover-footer {
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center; /* Centers content horizontally */
     align-items: center;
     text-align: center; /* Ensures text is centered within flex items */
     padding: 10px 0;
-    background-color: #0000001b;
+    background-color: #5454541b;
     margin-top: auto; /* Pushes footer to the bottom if content is short */
     letter-spacing: 3px;
     opacity: 100%;
     width: 100%; /* Full width for footer */
     flex-direction: column; /* Stack items vertically */
+    font-size: 14px;
+}
+
+.discover-footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Centers the footer navigation list */
+    text-align: center;
+    display: flex;
+    gap: 15px;
+}
+
+.discover-footer-nav ul li {
+    display: inline-block; /* Inline-block for proper spacing and centering */
+}
+
+.discover-footer-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.discover-footer-nav ul li a:hover {
+    color: #686868;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.small-text, .small-text-1 {
+    color: #c6c6c6;
+    letter-spacing: 3px;
+    font-variation-settings: 'wght' 200;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px auto; /* Centers the small text */
+}
+
+.small-text a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.small-text a:hover {
+    text-decoration: underline;
+}
+
+.thin_line, .about-page h2, .small-text-1 {
+    position: relative;
+    top: -400px;
+}
+
+.small-text-1 {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .discover-footer {
+        padding: 5px 0; 
+        font-size: 17px; 
+        align-items: flex-start;
+        text-align: left;
+        font-variation-settings: 'wght' 400;
+        color: #000;
+        
+    }
+
+    .discover-footer-nav ul {
+        flex-direction: column; 
+        gap: 5px; 
+        font-variation-settings: 'wght' 400;
+        align-items: flex-start;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------DISCOVER PAGE ENDS HERE---------------------*/
+
+
+.site-footer {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    padding: 10px 0;
+    background-color: #0000001b;
+    margin-top: auto; 
+    letter-spacing: 3px;
+    opacity: 100%;
+    width: 100%; 
+    flex-direction: column;
     font-size: 14px;
 }
 
@@ -984,10 +1193,37 @@ footer p {
 
 
 
+.discover-nav a{
+    color: white;
+}
 
 
 
+nav li:hover .discover-submenu {
+    display: block;
+}
 
+.discover-submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    padding: 8px 0;
+    top: 100%; /* Position below Discover */
+    left: 1240px;
+    align-items: flex-start;
+}
+
+.discover-submenu li {
+    padding: 8px 16px;
+}
+
+.discover-submenu li a {
+    color: rgb(238, 236, 236);
+    text-decoration: none;
+}
+
+.discover-submenu li a:hover {
+    color: gray;
+}
 
 
 
