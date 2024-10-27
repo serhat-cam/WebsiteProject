@@ -31,27 +31,32 @@ html, body {
 
 /* Main Content Styles */
 .main-content {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
+        max-width: 1200px; /* Limits the form width */
+        padding: 120px;    /* Adds padding inside the form */
+        border-radius: 8px; /* Rounded corners */
+        text-align: left; /* Aligns text and elements to the left */
+        position: relative; /* Keep it relative for better control */
+        left: 0; /* Align the form to the left of the page */
+        
+    
 }
 
 .under-logo {
     color: #ffffff;
-    font-size: 26px;
-    font-weight: 100;
+    font-size: 22px;
+    font-variation-settings: 'wght' 300;
     letter-spacing: 13px;
     position: absolute;
-    top: 540px;
-    left: 185px;
-    mix-blend-mode: exclusion;
+    top: 300px;
+    left: 35px;
+    opacity: 30%;
 }
 
 /* Logo Styles */
 .logo {
     position: absolute;
-    top: 280px;
-    left: 150px;
+    top: 20px;
+    left: 0px;
     width: 280px;
     mix-blend-mode: exclusion;
 }
