@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOKING</title>
-    <meta name="Serhat Cam" content="Artist-Page">
+    <meta name="author" content="Serhat Cam">
+    <meta name="keywords" content="tattoos, Serhat Cam, tattoo artist, Amsterdam, body art">
+    <meta name="description" content="Serhat Cam - Tattoo artist based in Amsterdam, specializing in black and white, abstract tattoo styles. Book your consultation today!">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
@@ -115,16 +117,30 @@
 
             <label for="size">Size*</label>
             <input type="text" name="size" id="size" placeholder="Example: 5x6 cm" required>
+
+            <label for="tattoo_style">Preferred Tattoo Style*</label>
+    <select name="tattoo_style" id="tattoo_style" required>
+        <option value="" disabled selected>Select your style</option>
+        <option value="Traditional">Traditional</option>
+        <option value="Realism">Realism</option>
+        <option value="Watercolor">Watercolor</option>
+        <option value="Black and Grey">Black and Grey</option>
+        <option value="Abstract">Abstract</option>
+        <option value="Tribal">Tribal</option>
+    </select>
+
+    
                   
             <input type="submit" value="SUBMIT">
         </form>
 
         <em class="info-text">Note: Due to the artist’s unique style and creative approach, not all requests may be accepted. If you do not receive a reply, it simply means the design might not be the best fit for the artist’s expertise. We appreciate your understanding and thank you for considering us for your tattoo.</em>
-
+        <a href="index.html" class="hover-link">Go to main page</a>
         <figure class="maps">
             <img class="maps-photo" src="img/maps-photo.png" alt="maps-photo">
         </figure> 
         <p class="address">Kunstenaarsgracht 47</p>
+        
         
     </main>
 

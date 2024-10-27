@@ -730,6 +730,37 @@ html, body {
     text-align: left; /* Aligns the checkbox section to the left */
 }
 
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+option {
+    padding: 10px; 
+}
+
+option:checked {
+    background-color: #000000; 
+    color: white; 
+}
+
+
+
+.hover-link {
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Default link color */
+    transition: color 0.3s; /* Smooth transition for color change */
+    font-size: 20px;
+}
+
+.hover-link:hover {
+    color: #ff5733; /* Change color when hovered */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+
+
 /* Submit button styling */
 .booking-form input[type="submit"] {
     background-color: #000; /* Black button */
@@ -737,12 +768,17 @@ html, body {
     font-weight: 700; /* Bold text */
     cursor: pointer; /* Pointer on hover */
     transition: background-color 0.3s ease; /* Smooth color transition */
+    border-width: 2px;
+    border-style: outset;
+    border-color: #ffffff;
 }
 
 .booking-form input[type="submit"]:hover {
     background-color: #444; /* Darken on hover */
     font-variation-settings: 'wght' 900;
 }
+
+
 
 .info-text {
     font-variation-settings: 'wght' 500;
@@ -755,6 +791,8 @@ html, body {
     max-width: 1000px; /* Ensure the image doesn't exceed 1000px */
     display: block;
 }
+
+
 
 .maps {
     text-align: left; /* Centers the image inside the figure */
@@ -1542,4 +1580,10 @@ nav li:hover .submenu {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 12px;
+    }
 }
