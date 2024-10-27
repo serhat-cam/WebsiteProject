@@ -142,7 +142,7 @@
 }
 
 .small-text-1 {
-    margin-top: -5px;
+    
 }
 
 .image-layout {
