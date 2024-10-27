@@ -887,19 +887,19 @@ main {
 }
 
 .main-images {
-    display: flex; /* Use flexbox to align images side by side */
-    justify-content: center; /* Center images horizontally */
-    gap: 10px; /* Optional: Add space between images */
-    margin: 20px 0; /* Optional: Add margin to separate from other content */
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin: 20px 0; 
 }
 
 .machine {
-    max-width: 25%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 10px; /* Add margin between images */
+    max-width: 25%; 
+    height: auto; 
+    margin: 0 10px; 
     opacity: 0; /* Start hidden */
     animation: fadeIn 3.0s ease-out forwards; /* Apply the animation */
-    animation-delay: 2.3s; /* Optional delay before the animation starts */
+    animation-delay: 2.3s; 
 }
 
 /* Workshop Section Styles */
@@ -1063,8 +1063,8 @@ main {
     
     .short {
         margin-top: 50px;
-        font-size: 18px; /* Adjust font size */
-        color: #c9c9c9; /* Text color */
+        font-size: 18px; 
+        color: #c9c9c9; 
     }
 
 }
@@ -1099,7 +1099,7 @@ main {
 }
 
 .discover-footer-nav ul li {
-    display: inline-block; /* Inline-block for proper spacing and centering */
+    display: inline-block; 
 }
 
 .discover-footer-nav ul li a {
@@ -1125,7 +1125,7 @@ main {
     font-variation-settings: 'wght' 200;
     font-size: 14px;
     text-align: center;
-    margin: 5px auto; /* Centers the small text */
+    margin: 5px auto; 
 }
 
 .small-text a {
@@ -1173,34 +1173,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------DISCOVER PAGE ENDS HERE---------------------*/
 
 
@@ -1230,7 +1202,7 @@ main {
 }
 
 .footer-nav ul li {
-    display: inline-block; /* Inline-block for proper spacing and centering */
+    display: inline-block; 
 }
 
 .footer-nav ul li a {
@@ -1256,7 +1228,7 @@ footer p {
     font-variation-settings: 'wght' 200;
     font-size: 14px;
     text-align: center;
-    margin: 5px auto; /* Centers the small text */
+    margin: 5px auto; 
 }
 
 .small-text a {
@@ -1278,7 +1250,7 @@ footer p {
     text-align: left;
 }
 
-/* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
     .site-footer {
         padding: 5px 0; /* Reduce padding */
@@ -1315,24 +1287,24 @@ footer p {
 .works-footer {
     color: rgb(0, 0, 0);
     display: flex;
-    justify-content: center; /* Centers content horizontally */
+    justify-content: center; 
     align-items: center;
-    text-align: center; /* Ensures text is centered within flex items */
+    text-align: center; 
     padding: 10px 0;
     background-color: #0000001b;
     margin-top: 2000px; /* Pushes footer to the bottom if content is short */
     letter-spacing: 3px;
     opacity: 100%;
-    width: 100%; /* Full width for footer */
-    flex-direction: column; /* Stack items vertically */
+    width: 100%; 
+    flex-direction: column; 
     font-size: 14px;
 }
 
-/* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
     .works-footer {
-        padding: 5px 0; /* Reduce padding */
-        font-size: 17px; /* Decrease font size */
+        padding: 5px 0; 
+        font-size: 17px; 
         align-items: flex-start;
         text-align: left;
         font-variation-settings: 'wght' 400;
