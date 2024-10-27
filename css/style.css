@@ -889,8 +889,12 @@ main {
 
 .short {
     margin-top: -450px;
-    font-size: 18px; /* Adjust font size */
     color: #c9c9c9; /* Text color */
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-variation-settings: 'wght' 700;
+    letter-spacing: 6px;
+    word-spacing: 2px;
 }
 
 .me-portait{
@@ -954,6 +958,16 @@ main {
     position: relative;
     bottom: 200px;
 
+}
+
+
+
+
+.details{
+    font-variation-settings: 'wght' 300;
+    letter-spacing: 2px;
+    font-size: 17px;
+    letter-spacing: 2px;
 }
 
 
@@ -1117,11 +1131,6 @@ main {
 
     
 }
-
-
-
-
-
 
 
 
@@ -1342,6 +1351,41 @@ nav li:hover .discover-submenu {
 .discover-submenu li a:hover {
     color: gray;
 }
+
+
+
+.index-submenu li a {
+    color: rgb(238, 236, 236);
+    text-decoration: none;
+}
+
+.index-submenu li a:hover {
+    color: gray;
+}
+
+.discover-nav a{
+    color: white;
+}
+
+
+
+nav li:hover .index-submenu {
+    display: block;
+}
+
+.index-submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    padding: 8px 0;
+    top: 100%; /* Position below Discover */
+    left: 1240px;
+    align-items: flex-start;
+}
+
+.index-submenu li {
+    padding: 8px 16px;
+}
+
 
 
 
