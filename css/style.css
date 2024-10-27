@@ -315,7 +315,7 @@ html, body {
     border-radius: 8px; /* Rounded corners */
     text-align: left; /* Aligns text and elements to the left */
     position: relative; /* Keep it relative for better control */
-    left: 0; /* Align the form to the left of the page */
+    
     
 }
 
@@ -354,49 +354,89 @@ html, body {
     top: -400px;
 }
 
-.small-text-1 {
-
-}
-
 .image-layout {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(50px, 1fr)); /* 2 columns */
-    gap: 0px; /* Reduced space between images */
-    padding: 0px; /* Reduced padding around the layout */
-}
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
 
-.image-layout figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 10px; /* Reset default margin */
-    padding: 0;
     
 }
 
-.image-layout img {
-    width: 50%; /* Smaller images, 80% of their container width */
-    aspect-ratio: 1;
+.img-baby, .img-bird, .img-flower, .img-eye1, .img-eye2, .img-bug1, .img-mouth, .img-woman, .img-smile, .img-snake {
+    transform: scale(0.3); /* Scale down the image */
     height: auto; /* Maintain aspect ratio */
-    display: block;
-    object-fit: cover;
+    position: absolute;
+    
+} 
+
+.img-baby {
+    top: -400px; /* Adjust vertical position */
+    left: -50px; /* Adjust horizontal position */
     
 }
 
-.image-layout figcaption {
-    margin-top: 8px; /* Smaller space above the caption */
-    font-size: 12px; /* Smaller caption text */
-    color: #666;
-    text-align: center;
+.img-bird {
+    
+    top: -400px; /* Control vertical position */
+    left: 300px; /* Control horizontal position */
 }
 
-/* Responsive: On smaller screens, make it 1 column */
-@media (max-width: 768px) {
-    .image-layout {
-        grid-template-columns: repeat(6, minmax(100px, 1fr)); /* Switch to 1 column */
-    }
+/* Add more classes for each specific image */
+.img-flower {
+    top: -50px; /* Control vertical position */
+    left: 300px; /* Control horizontal position */
+}
+
+.img-eye1 {
+    top: -50px; /* Control vertical position */
+    left: -50px; /* Control horizontal position */
+}
+
+.img-eye2{
+    top: 300px; /* Adjust vertical position */
+    left: 300px; /* Adjust horizontal position */
+}
+
+.img-mouth{
+    top: 300px; /* Adjust vertical position */
+    left: -46px; /* Adjust horizontal position */
+}
+
+.img-woman{
+    top: 650px; /* Adjust vertical position */
+    left: 300px; /* Adjust horizontal position */
+}   
+
+.img-smile{
+    top: 650px; /* Adjust vertical position */
+    left: -50px; /* Adjust horizontal position */
+}
+
+.img-snake{
+    transform: scale(0.148);
+    top: 275px; /* Adjust vertical position */
+    left: -254px; /* Adjust horizontal position */
+}
+
+.img-bug1{
+    transform: scale(0.147);
+    top: 140px; /* Adjust vertical position */
+    left: -600px; /* Adjust horizontal position */
+}
+
+
+
+
+@media (max-width: 768px){
+    .image-layout
+
+    .img-baby, .img-bird, .img-flower, .img-eye1, .img-eye2, .img-mouth, .img-woman, .img-smile {
+        transform: scale(0.17);
+        height: auto; /* Maintain aspect ratio */
+        position: absolute;
+        margin-left: -400px;
+    } 
 }
 
 
@@ -830,6 +870,66 @@ footer p {
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+.works-footer {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    text-align: center; /* Ensures text is centered within flex items */
+    padding: 10px 0;
+    background-color: #0000001b;
+    margin-top: 2000px; /* Pushes footer to the bottom if content is short */
+    letter-spacing: 3px;
+    opacity: 100%;
+    width: 100%; /* Full width for footer */
+    flex-direction: column; /* Stack items vertically */
+    font-size: 14px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .works-footer {
+        padding: 5px 0; /* Reduce padding */
+        font-size: 17px; /* Decrease font size */
+        align-items: flex-start;
+        text-align: left;
+        font-variation-settings: 'wght' 400;
+        color: #000;
+        
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
