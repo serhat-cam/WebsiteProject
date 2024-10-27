@@ -868,6 +868,9 @@ main {
 .workshop {
     text-align: center; /* Center text in the workshop section */
     margin: 20px 0; /* Optional: Add margin to separate from other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .workshop h1{
@@ -889,17 +892,92 @@ main {
     color: #c9c9c9; /* Text color */
 }
 
+.me-portait{
+    width: 330px;
+    max-width: 100%;
+    border-radius: 9px;
+    margin-right: 700px;
 
-/* Responsive Adjustments */
+}
+
+.next-to-image{
+    font-variation-settings: 'wght' 300;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-left: 500px;
+    max-width: 800px;
+    font-style: italic;
+    text-align: left;
+    bottom: 380px;
+    position: relative;
+    line-height: 40px;
+}
+
+.bold{
+    font-variation-settings: 'wght' 700;
+    font-size: 18px;
+}
+
+.me-working{
+    width: 330px;
+    max-width: 100%;
+    border-radius: 9px;
+    margin-right: 700px;
+    position: relative;
+    bottom: 200px;
+}
+
+.certif{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 9px;
+    margin-left: 700px;
+    position: relative;
+    bottom: 600px;
+}
+
+
 @media (max-width: 768px) {
     .main-images {
-        flex-direction: column; /* Stack images vertically on small screens */
+        flex-direction: column; 
     }
 
     .machine {
-        max-width: 100%; /* Full width for images */
+        max-width: 100%; 
     }
 
+    .me-portait{
+        width: 330px;
+        max-width: 100%;
+        border-radius: 9px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .next-to-image{
+        font-variation-settings: 'wght' 300;
+        letter-spacing: 2px;
+        font-size: 17;
+        margin-left: 0px;
+        bottom: 0;
+        text-align: center;
+    }
+    .me-working{
+        width: 330px;
+        max-width: 100%;
+        border-radius: 9px;
+        margin-right: 0px;
+        position: relative;
+        bottom: 0px;
+    }
+    
+    .certif{
+        width: 500px;
+        max-width: 100%;
+        border-radius: 9px;
+        margin-left: 0px;
+        position: relative;
+        top: 3px;
+    }
 
 }
 
@@ -910,23 +988,23 @@ main {
 .discover-footer {
     color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center; /* Centers content horizontally */
+    justify-content: center; 
     align-items: center;
-    text-align: center; /* Ensures text is centered within flex items */
+    text-align: center; 
     padding: 10px 0;
     background-color: #5454541b;
-    margin-top: auto; /* Pushes footer to the bottom if content is short */
+    margin-top: auto; 
     letter-spacing: 3px;
     opacity: 100%;
-    width: 100%; /* Full width for footer */
-    flex-direction: column; /* Stack items vertically */
+    width: 100%; 
+    flex-direction: column; 
     font-size: 14px;
 }
 
 .discover-footer-nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 auto; /* Centers the footer navigation list */
+    margin: 0 auto; 
     text-align: center;
     display: flex;
     gap: 15px;
@@ -1121,7 +1199,7 @@ footer p {
 @media (max-width: 768px) {
     .site-footer {
         padding: 5px 0; /* Reduce padding */
-        font-size: 17px; /* Decrease font size */
+        font-size: 17px; 
         align-items: flex-start;
         text-align: left;
         font-variation-settings: 'wght' 400;
