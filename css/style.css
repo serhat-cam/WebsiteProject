@@ -432,11 +432,68 @@ html, body {
     .image-layout
 
     .img-baby, .img-bird, .img-flower, .img-eye1, .img-eye2, .img-mouth, .img-woman, .img-smile {
-        transform: scale(0.17);
+        transform: scale(0.15);
         height: auto; /* Maintain aspect ratio */
         position: absolute;
         margin-left: -400px;
+        
     } 
+
+    .img-baby {
+        top: -400px; /* Adjust vertical position */
+        left: -40px; /* Adjust horizontal position */
+        
+    }
+    
+    .img-bird {
+        
+        top: -400px; /* Control vertical position */
+        left: 150px; /* Control horizontal position */
+    }
+    
+    /* Add more classes for each specific image */
+    .img-flower {
+        top: -210px; /* Control vertical position */
+        left: 150px; /* Control horizontal position */
+    }
+    
+    .img-eye1 {
+        top: -210px; /* Control vertical position */
+        left: -40px; /* Control horizontal position */
+    }
+    
+    .img-eye2{
+        top: -20px; /* Adjust vertical position */
+        left: 150px; /* Adjust horizontal position */
+    }
+    
+    .img-mouth{
+        top: -20px; /* Adjust vertical position */
+        left: -34px; /* Adjust horizontal position */
+    }
+    
+    .img-woman{
+        top: 170px; /* Adjust vertical position */
+        left: 150px; /* Adjust horizontal position */
+    }   
+    
+    .img-smile{
+        top: 170px; /* Adjust vertical position */
+        left: -40px; /* Adjust horizontal position */
+    }
+    
+    .img-snake{
+        transform: scale(0.075);
+        top: -383px; /* Adjust vertical position */
+        left: -844px;
+    }
+    
+    .img-bug1{
+        transform: scale(0.074);
+        top: -530px; /* Adjust vertical position */
+        left: -1035px; /* Adjust horizontal position */
+    }
+    
 }
 
 
@@ -906,6 +963,7 @@ footer p {
         text-align: left;
         font-variation-settings: 'wght' 400;
         color: #000;
+        margin-top: 1100px;
         
     }
 
