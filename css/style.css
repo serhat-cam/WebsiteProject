@@ -838,8 +838,9 @@ main {
 }
 
 .warning {
+
     font-family: 'Inter', sans-serif;
-    color: #434343;
+    color: #8a8a8a;
     animation: fadeIn 3.0s ease-out forwards;
     animation-delay: 1.8s; /* Optional delay before the animation starts */
     opacity: 0; /* Start hidden */
@@ -869,6 +870,11 @@ main {
     margin: 20px 0; /* Optional: Add margin to separate from other content */
 }
 
+.workshop h1{
+    font-size: 40px;
+    font-variation-settings: 'wght' 500;
+}
+
 .workshop p {
     color: rgb(222, 222, 222);
 }
@@ -894,9 +900,7 @@ main {
         max-width: 100%; /* Full width for images */
     }
 
-    .discover-page h1, .discover-page h2, .warning {
-        font-size: 24px; /* Adjust font size for small screens */
-    }
+
 }
 
 
